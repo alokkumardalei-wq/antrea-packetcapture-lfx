@@ -28,7 +28,7 @@ The goal is to build a Kubernetes controller that:
 
 ## 🏗️ Architecture
 
-![Architecture Diagram](https://drive.google.com/file/d/1hAed1eyoCrFqHkFZgtWELM3wIQePAopz/view?usp=sharing)
+![Architecture Diagram](./images/architecture.png)
 
 ### Components
 
@@ -58,3 +58,4 @@ The goal is to build a Kubernetes controller that:
 
 ```yaml
 tcpdump.antrea.io: "3"
+```
