@@ -1,4 +1,4 @@
-# PacketCapture Controller (Poor-Man’s Antrea PacketCapture)-LFX-Term-01-2026
+# PacketCapture Controller (Poor-Man’s Antrea PacketCapture)-LFX-Task-Term-01-2026
 
 This project implements a simplified version of **Antrea PacketCapture** as part of the LFX evaluation task.  
 It demonstrates Kubernetes controller fundamentals, DaemonSets, Pod annotations, and node-level packet capture using `tcpdump`.
