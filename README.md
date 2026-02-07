@@ -63,7 +63,8 @@ packetcapture/
 ├── daemonset.yaml # DaemonSet manifest
 ├── rbac.yaml # RBAC permissions
 ├── architecture.png # Architecture diagram
-└── assets/ # Verification screenshots 
+└── assets/ # Verification screenshots
+
     
 ```
 
@@ -178,8 +179,8 @@ After running this command you will see there is nothing because tcpdump is stop
 
 
 
-## Demo (Verification Only) Video:
-- [Demo](https://drive.google.com/file/d/1G5o_nZU0-wkJ_3A2Dnmzck75IMF9zDv6/view?usp=sharing)
+# Demo (Verification Only) Video:
+![Demo](./assets/Demo-verification-antrea-lfx.mp4)
 
 The video demonstrates:
 - Creating a pod
@@ -187,11 +188,12 @@ The video demonstrates:
 - Capturing packets in .pcap format
 - Stopping tcpdump and cleanup
 
+ 
  ## Now You have gone through the whole process of creating a pod, adding annotation to it, and then starting and stopping tcpdump for that pod and also verify the working of the controller. 
 
- ## Now let's clean up the cluster (optional):
+ ## Now let's clean up the cluster (optiona)
 ```bash
 kubectl delete -f rbac.yaml
-kubectl delete -f daemonset.yaml
+kubectl delete -f daemonset.yaml 
 kind delete cluster
 ```

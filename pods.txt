@@ -1,0 +1,17 @@
+NAMESPACE            NAME                                               READY   STATUS    RESTARTS        AGE
+default              debug                                              0/1     Unknown   0               6d2h
+default              test-pod                                           0/1     Unknown   0               6d18h
+default              traffic-pod                                        1/1     Running   0               4d23h
+kube-system          antrea-agent-cls5x                                 2/2     Running   0               6d18h
+kube-system          antrea-agent-w2v79                                 2/2     Running   2 (5d22h ago)   6d18h
+kube-system          antrea-controller-7f69c8dc84-xl67z                 1/1     Running   0               6d18h
+kube-system          coredns-7d764666f9-q2ftp                           1/1     Running   0               6d18h
+kube-system          coredns-7d764666f9-xhwxm                           1/1     Running   0               6d18h
+kube-system          etcd-antrea-lfx-control-plane                      1/1     Running   0               6d18h
+kube-system          kube-apiserver-antrea-lfx-control-plane            1/1     Running   0               6d18h
+kube-system          kube-controller-manager-antrea-lfx-control-plane   1/1     Running   0               6d18h
+kube-system          kube-proxy-kxw5j                                   1/1     Running   1 (5d22h ago)   6d18h
+kube-system          kube-proxy-nwrng                                   1/1     Running   0               6d18h
+kube-system          kube-scheduler-antrea-lfx-control-plane            1/1     Running   0               6d18h
+kube-system          packetcapture-sglkr                                1/1     Running   0               4d23h
+local-path-storage   local-path-provisioner-67b8995b4b-8hfwp            1/1     Running   0               6d18h
