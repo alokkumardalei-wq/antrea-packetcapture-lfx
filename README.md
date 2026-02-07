@@ -63,9 +63,7 @@ packetcapture/
 ├── rbac.yaml # RBAC permissions
 ├── architecture.png # Architecture diagram
 └── assets/ # Verification screenshots 
-├── antrea-running.png
-├── capture-files.png
-└── controller-logs.png
+
 
 ## 📦 Prerequisites
 
