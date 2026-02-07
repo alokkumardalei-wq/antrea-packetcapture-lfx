@@ -5,7 +5,7 @@ It demonstrates Kubernetes controller fundamentals, DaemonSets, Pod annotations,
 
 ---
 
-## 📌 Problem Statement
+##  Problem Statement
 
 The goal is to build a Kubernetes controller that:
 
@@ -16,7 +16,7 @@ The goal is to build a Kubernetes controller that:
 
 ---
 
-## 🧠 Key Idea (In Simple Terms)
+##  Key Idea (In Simple Terms)
 
 - Pods can be annotated with extra metadata
 - When a Pod gets annotated with `tcpdump.antrea.io: "<N>"`
@@ -26,7 +26,7 @@ The goal is to build a Kubernetes controller that:
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 <img src="./assets/architecture.png" width="500" height="300" alt="Architecture Diagram">
 
@@ -43,7 +43,7 @@ The goal is to build a Kubernetes controller that:
 
 ---
 
-## 🔄 Control Flow
+##  Control Flow
 
 1. User adds annotation to a Pod  
 2. Controller detects the annotation via Pod watch  
@@ -67,7 +67,7 @@ packetcapture/
     
 ```
 
-## 📦 Prerequisites
+##  Prerequisites
 
 - [Kind](https://kind.sigs.k8s.io/docs/user/quick-start/)
 - [Antrea](https://antrea.io/docs/2025.1/installation/)
@@ -77,7 +77,7 @@ packetcapture/
 - [Helm](https://helm.sh/docs/intro/install/)
 
 
-## 📦 How to set up/Installation
+##  How to set up/Installation
 1.Creating kind cluster:
 Run this command on your terminal to create a kind cluster:
 ```bash
