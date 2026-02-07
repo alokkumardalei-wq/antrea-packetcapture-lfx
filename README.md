@@ -179,7 +179,10 @@ After running this command you will see there is nothing because tcpdump is stop
 
 
 ## Demo (Verification Only) Video:
-![Demo](./assets/Demo-verification-antrea-lfx.mp4)
+<video width="600" controls>
+  <source src="./assets/Demo-verification-antrea-lfx.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 
 
