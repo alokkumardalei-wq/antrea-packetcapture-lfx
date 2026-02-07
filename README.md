@@ -28,7 +28,7 @@ The goal is to build a Kubernetes controller that:
 
 ## 🏗️ Architecture
 
-<img src="./assets/architecture.png" width="500" height="300" alt="Architecture Diagram">
+![Architecture Diagram](./assets/architecture.png)
 
 ### Components
 
@@ -55,6 +55,7 @@ The goal is to build a Kubernetes controller that:
 ---
 
 ## Directory Structure
+```
 packetcapture/
 ├── kind-cluster.yaml # Kind cluster configuration
 ├── main.go # Go-based controller
@@ -63,7 +64,10 @@ packetcapture/
 ├── rbac.yaml # RBAC permissions
 ├── architecture.png # Architecture diagram
 └── assets/ # Verification screenshots 
-
+    ├── antrea-running.png
+    ├── capture-files.png
+    └── controller-logs.png
+```
 
 ## 📦 Prerequisites
 
@@ -89,6 +93,7 @@ $ helm repo add antrea https://charts.antrea.io
 $ helm repo update
 $ helm install antrea antrea/antrea -n kube-system
 ```
+
 Verify Antrea installation:
 ```bash
 $ kubectl get pods -n kube-system | grep antrea
@@ -100,6 +105,7 @@ Run this command on your terminal to build and push the Docker image:
 $ docker build -t packetcapture:latest .
 $ docker push packetcapture:latest
 ```
+
 Verify Docker Image:
 ```bash
 $ kubectl get images | grep packetcapture
@@ -113,14 +119,15 @@ Successfully created and pushed docker image using Dockerfile through Docker Des
 4.Deploying the Controller:
 Run this command on your terminal to deploy the controller:
 ```bash
-$ kubectl apply -f rbac.yaml
+$ kubectl apply -f rbac.yaml // #Apply rbac permissions
 ```
 ![RBAC](./assets/RBAC-yaml.png)
 This shows RBAC permissions applied successfully for the controller.
+
 ```bash
 $ kubectl apply -f daemonset.yaml // #Deploy the controller as a DaemonSet
 ```
-![DaemonSet](./assets/daemonset-yaml.png)
+![DaemonSet](./assets/Daemonset-yaml.png)
 This shows the controller deployed successfully as a DaemonSet.
 
 Verify Deployement:
@@ -173,23 +180,16 @@ After running this command you will see there is nothing because tcpdump is stop
 
 
 
-## Demo (Verification Only) Video:
+# Demo (Verification Only) Video:
 ![Demo](./assets/Demo-verification-antrea-lfx.mp4)
 
 
 
-  ## Now You have gone through the whole process of creating a pod, adding annotation to it, and then starting and stopping tcpdump for that pod and also verify the working of the controller. 
+ # Now You have gone through the whole process of creating a pod, adding annotation to it, and then starting and stopping tcpdump for that pod and also verify the working of the controller. 
 
-  ## Now let's clean up the cluster (optional):
+ # Now let's clean up the cluster (optional):
 ```bash
 kubectl delete -f rbac.yaml
 kubectl delete -f daemonset.yaml
 kind delete cluster
 ```
-
-
-
-
-
-
-
