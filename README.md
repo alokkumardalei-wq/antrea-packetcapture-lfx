@@ -99,7 +99,7 @@ docker push packetcapture:latest
 Verify Docker Image:
 kubectl get images | grep packetcapture
 
-[!DockerImage](./assets/dockerimage.png)
+![DockerImage](./assets/dockerimage.png)
 
 Successfully created and pushed docker image using Dockerfile through Docker Desktop
 
@@ -107,25 +107,25 @@ Successfully created and pushed docker image using Dockerfile through Docker Des
 4.Deploying the Controller:
 Run this command on your terminal to deploy the controller:
 kubectl apply -f rbac.yaml // #Apply rbac permissions
-[!RBAC](./assets/RBAC-yaml.png)
+![RBAC](./assets/RBAC-yaml.png)
 This shows RBAC permissions applied successfully for the controller.
 
 kubectl apply -f daemonset.yaml // #Deploy the controller as a DaemonSet
-[!DaemonSet](./assets/daemonset-yaml.png)
+![DaemonSet](./assets/daemonset-yaml.png)
 This shows the controller deployed successfully as a DaemonSet.
 
 Verify Deployement:
 Run these commands on your terminal to verify deployment:
 kubectl get ds -n kube-system packetcapture
 After running this command you will see this:
-[!DaemonSet](./assets/daemonset-controller-pod.png)
+![DaemonSet](./assets/daemonset-controller-pod.png)
 You can see packetcapture Daemonset is in ready state of 1, this shows the Daemonset pod is deployed successfully.
 
 
 kubectl get pods -n kube-system -l app=packetcapture
 
 After running this command you will see this:
-[!pod](./assets/get-pods.png)
+![pod](./assets/get-pods.png)
 
 This shows your pod with pod_name-xxxx here it is packetcapture-sglkr which is running state of 1 which means your pod created sucessfully and its working.
 
@@ -142,7 +142,7 @@ After running this command your conatroller detects the annotation and starts tc
 
 You will something like this:
 
-[!tcpdump](./assets/tcpstart.png)
+![tcpdump](./assets/tcpstart.png)
 
 Here you can see that tcpdump is started and it is capturing packets for the pod traffic-pod
 
@@ -159,7 +159,7 @@ After running this command you will see there is nothing because tcpdump is stop
 
 
 ## Demo (Verification Only) Video:
-[!Demo](https://drive.google.com/file/d/1G5o_nZU0-wkJ_3A2Dnmzck75IMF9zDv6/view?usp=sharing)
+![Demo](https://drive.google.com/file/d/1G5o_nZU0-wkJ_3A2Dnmzck75IMF9zDv6/view?usp=sharing)
 
 
 
