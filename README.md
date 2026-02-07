@@ -28,7 +28,7 @@ The goal is to build a Kubernetes controller that:
 
 ## 🏗️ Architecture
 
-![Architecture Diagram](./assets/architecture.png)
+<img src="./assets/architecture.png" width="500" height="300" alt="Architecture Diagram">
 
 ### Components
 
@@ -64,9 +64,7 @@ packetcapture/
 ├── rbac.yaml # RBAC permissions
 ├── architecture.png # Architecture diagram
 └── assets/ # Verification screenshots 
-    ├── antrea-running.png
-    ├── capture-files.png
-    └── controller-logs.png
+    
 ```
 
 ## 📦 Prerequisites
@@ -185,9 +183,9 @@ After running this command you will see there is nothing because tcpdump is stop
 
 
 
- # Now You have gone through the whole process of creating a pod, adding annotation to it, and then starting and stopping tcpdump for that pod and also verify the working of the controller. 
+ ## Now You have gone through the whole process of creating a pod, adding annotation to it, and then starting and stopping tcpdump for that pod and also verify the working of the controller. 
 
- # Now let's clean up the cluster (optional):
+ ## Now let's clean up the cluster (optional):
 ```bash
 kubectl delete -f rbac.yaml
 kubectl delete -f daemonset.yaml
