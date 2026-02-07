@@ -179,15 +179,13 @@ After running this command you will see there is nothing because tcpdump is stop
 
 
 ## Demo (Verification Only) Video:
-
-
-
-
-- [YouTube](https://www.youtube.com/)
 - [Google Drive](https://drive.google.com/file/d/1G5o_nZU0-wkJ_3A2Dnmzck75IMF9zDv6/view?usp=sharing)
-- [Vimeo](https://vimeo.com/)
-- [GitHub Releases](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository)
 
+The video demonstrates:
+- Creating a pod
+- Adding annotation to trigger tcpdump
+- Capturing packets in .pcap format
+- Stopping tcpdump and cleanup
 
  ## Now You have gone through the whole process of creating a pod, adding annotation to it, and then starting and stopping tcpdump for that pod and also verify the working of the controller. 
 
