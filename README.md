@@ -28,7 +28,7 @@ The goal is to build a Kubernetes controller that:
 
 ##  Architecture
 
-<img src="./assets/architecture.png" width="500" height="300" alt="Architecture Diagram">
+<img src="./assets/architecture.png" width="500" height="500" alt="Architecture Diagram">
 
 ### Components
 
