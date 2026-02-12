@@ -180,7 +180,7 @@ After running this command you will see there is nothing because tcpdump is stop
 
 
 # Demo (Verification Only) Video:
-![Demo](./assets/Demo-verification-antrea-lfx.mp4)
+![Demo](https://drive.google.com/file/d/1G5o_nZU0-wkJ_3A2Dnmzck75IMF9zDv6/view?usp=sharing)
 
 The video demonstrates:
 - Creating a pod
